@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Sergey Kirpik](https://up.htmlacademy.ru/htmlcss/28/user/247812).
-* Наставник: `Неизвестно`.
+- Студент: [Sergey Kirpik](https://up.htmlacademy.ru/htmlcss/28/user/247812).
+- Наставник: [Андрей Островский](https://htmlacademy.ru/profile/id198062).
 
 ---
 
