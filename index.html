@@ -197,14 +197,27 @@
   </footer>
 
   <section>
-    <h2>Вход</h2>
-    <a href="blank.html">Войти</a>
-    <a href="blank.html">Забыли пароль?</a>
-    <a href="blank.html">Новая регистрация</a>
+    <h2 class="visually-hidden">Вход</h2>
+    <form action="http://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="email-field" class="visually-hidden">Адрес электронной почты</label>
+        <input type="email" id="email-field" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="password-field" class="visually-hidden">Пароль</label>
+        <input type="password" id="password-field" name="password">
+      </p>
+      <button type="submit">Войти</button>
+    </form>
+    <p>
+      <a href="blank.html">Забыли пароль?</a>
+      <a href="blank.html">Новая регистрация</a>
+    </p>
   </section>
 
   <section>
     <h2>Мы обязательно вам ответим!</h2>
+    
   </section>
 
   <section>
