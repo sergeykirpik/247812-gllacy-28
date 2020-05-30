@@ -226,7 +226,32 @@
 
   <section>
     <h2>Мы обязательно вам ответим!</h2>
-    
+    <button type="button">
+      <span  class="visually-hidden">Закрыть форму обратной связи</span>
+    </button>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="field-name" class="visually-hidden">
+          Имя и фамилия
+        </label>
+        <input type="text" id="field-name" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="filed-email" class="visually-hidden">
+          Адрес электронной почты
+        </label>
+        <input type="email" id="field-email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="field-message">
+          Текст сообщения в свободной форме
+        </label>
+        <textarea id="field-message" name="message" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">
+        Отправить
+      </button>
+    </form>
   </section>
 
   <section>
