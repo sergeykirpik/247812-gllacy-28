@@ -16,6 +16,23 @@
       <ul>
         <li>
           <a href="catalog.html">Каталог</a>
+          <ul>
+            <li>
+              <a href="blank.html">Новинки</a>
+            </li>
+            <li>
+              <a href="catalog.html">Сливочное</a>
+            </li>
+            <li>
+              <a href="blank.html">Щербеты</a>
+            </li>
+            <li>
+              <a href="blank.html">Фруктовый лед</a>
+            </li>
+            <li>
+              <a href="blank.html">Мелорин</a>
+            </li>
+          </ul><!-- Каталог -->
         </li>
         <li>
           <a href="blank.html">Доставка и оплата</a>
@@ -25,9 +42,117 @@
         </li>
       </ul>
     </nav>
+
     <a href="blank.html">Поиск</a>
+    <section>
+      <h2 class="visually-hidden">Форма поиска</h2>
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <label for="search-field" class="visually-hidden">Поиск: введите текст и нажмите Enter</label>
+        <input type="text" id="search-field" name="search" placeholder="Крем-брюле">
+      </form>
+    </section>
+
     <a href="blank.html">Вход</a>
+    <section>
+      <h2 class="visually-hidden">Вход</h2>
+      <form action="http://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="email-field" class="visually-hidden">Адрес электронной почты</label>
+          <input type="email" id="email-field" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="password-field" class="visually-hidden">Пароль</label>
+          <input type="password" id="password-field" name="password">
+        </p>
+        <button type="submit">Войти</button>
+      </form>
+      <p>
+        <a href="blank.html">Забыли пароль?</a>
+        <a href="blank.html">Новая регистрация</a>
+      </p>
+    </section>
+
     <a href="blank.html">Корзина</a>
+    <section>
+      <h2 class="visually-hidden">Корзина</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <button type="button">
+                <span class="visually-hidden">Убрать из корзины: Пломбир с апельсиновым джемом</span>
+              </button>
+            </td>
+            <td>
+              <img
+                src="img/product01.png"
+                alt="Пломбир с апельсиновым джемом"
+                width="33" height="33"
+              >
+            </td>
+            <td>
+              <h3>
+                <a href="blank.html">
+                  <span class="visually-hidden">О товаре</span>
+                  Пломбир с апельсиновым джемом
+                </a>
+              </h3>
+            </td>
+            <td>
+              <span class="visually-hidden">1,5 кг умножить на 200 рублей</span>
+              <span aria-hidden="true">1,5 кг x 200 руб.</span>
+            </td>
+            <td>
+              <span class="visually-hidden">равно стоимости в 300 рублей</span>
+              <span aria-hidden="true">300 руб.</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button">
+                <span class="visually-hidden">Убрать из корзины: Клубничный пломбир с присыпкой из белого шоколада</span>
+              </button>
+            </td>
+            <td>
+              <img
+                src="img/product03.png"
+                alt="Клубничный пломбир с присыпкой из белого шоколада"
+                width="33" height="33"
+              >
+            </td>
+            <td>
+              <h3>
+                <a href="blank.html">
+                  <span class="visually-hidden">О товаре</span>
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </a>
+              </h3>
+            </td>
+            <td>
+              <span class="visually-hidden">1,5 кг умножить на 300 рублей</span>
+              <span aria-hidden="true">1,5 кг x 300 руб.</span>
+            </td>
+            <td>
+              <span class="visually-hidden">равно стоимости в 450 рублей</span>
+              <span aria-hidden="true">450 руб.</span>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="5">
+              <span class="visually-hidden">Сумма Вашего заказа 750 рублей</span>
+              <span aria-hidden="true">Итого: 750 руб.</span>
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <input type="hidden" name="order[]" value="product01">
+        <input type="hidden" name="order[]" value="product03">
+        <button type="submit">Оформить заказ</button>
+      </form>
+    </section><!-- Корзина -->
   </header>
 
   <main>
