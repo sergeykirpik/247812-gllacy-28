@@ -51,7 +51,7 @@
         <input type="text" id="search-field" name="search" placeholder="Крем-брюле">
       </form>
     </section>
-  
+
     <a href="blank.html">Вход</a>
     <section>
       <h2 class="visually-hidden">Вход</h2>
@@ -71,63 +71,85 @@
         <a href="blank.html">Новая регистрация</a>
       </p>
     </section>
-  
+
     <a href="blank.html">Корзина</a>
     <section>
       <h2 class="visually-hidden">Корзина</h2>
-      <ul>
-        <li>
-          <button type="button">
-            <span class="visually-hidden">Убрать из корзины: Пломбир с апельсиновым джемом</span>
-          </button>
-          <img 
-            src="img/product01.png" 
-            alt="Пломбир с апельсиновым джемом"
-            width="33" height="33"
-          >
-          <h3>
-            <a href="blank.html">
-              <span class="visually-hidden">О товаре</span>
-              Пломбир с апельсиновым джемом
-            </a>
-          </h3>
-          <p>
-            <span class="visually-hidden">Вес</span>
-            <span>1,5 кг</span> 
-            <span aria-label="умножить на">х</span>
-            <span aria-label="200 рублей">200 руб.</span>
-            <span class="visually-hidden">равно стоимости в</span>
-            <span aria-label="300 рублей">300 руб.</span>
-          </p>
-        </li>
-        <li>
-          <button type="button">
-            <span class="visually-hidden">Убрать из корзины: Клубничный пломбир с присыпкой из белого шоколада</span>
-          </button>
-          <img 
-            src="img/product03.png" 
-            alt="Клубничный пломбир с присыпкой из белого шоколада"
-            width="33" height="33"
-          >
-          <h3>
-            <a href="blank.html">
-              <span class="visually-hidden">О товаре</span>
-              Клубничный пломбир с присыпкой из белого шоколада
-            </a>
-          </h3>
-          <p>
-            <span class="visually-hidden">Вес</span>
-            <span>1,5 кг</span> 
-            <span aria-label="умножить на">х</span>
-            <span aria-label="300 рублей">300 руб.</span>
-            <span class="visually-hidden">равно стоимости в</span>
-            <span aria-label="450 рублей">450 руб.</span>
-          </p>
-        </li>
-      </ul>
-      <h3>
-        <span aria-label="Сумма Вашего заказа">Итого:</span> 750 <span aria-label="рублей">руб.</span>
-      </h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <button type="button">
+                <span class="visually-hidden">Убрать из корзины: Пломбир с апельсиновым джемом</span>
+              </button>
+            </td>
+            <td>
+              <img
+                src="img/product01.png"
+                alt="Пломбир с апельсиновым джемом"
+                width="33" height="33"
+              >
+            </td>
+            <td>
+              <h3>
+                <a href="blank.html">
+                  <span class="visually-hidden">О товаре</span>
+                  Пломбир с апельсиновым джемом
+                </a>
+              </h3>
+            </td>
+            <td>
+              <span class="visually-hidden">Вес</span>
+              <span>1,5 кг</span>
+              <span aria-label="умножить на">х</span>
+              <span aria-label="200 рублей">200 руб.</span>
+            </td>
+            <td>
+              <span class="visually-hidden">равно стоимости в</span>
+              <span aria-label="300 рублей">300 руб.</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button">
+                <span class="visually-hidden">Убрать из корзины: Клубничный пломбир с присыпкой из белого шоколада</span>
+              </button>
+            </td>
+            <td>
+              <img
+                src="img/product03.png"
+                alt="Клубничный пломбир с присыпкой из белого шоколада"
+                width="33" height="33"
+              >
+            </td>
+            <td>
+              <h3>
+                <a href="blank.html">
+                  <span class="visually-hidden">О товаре</span>
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </a>
+              </h3>
+            </td>
+            <td>
+              <span class="visually-hidden">Вес</span>
+              <span>1,5 кг</span>
+              <span aria-label="умножить на">х</span>
+              <span aria-label="300 рублей">300 руб.</span>
+            </td>
+            <td>
+              <span class="visually-hidden">равно стоимости в</span>
+              <span aria-label="450 рублей">450 руб.</span>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="5">
+              <span aria-label="Сумма Вашего заказа">Итого:</span> 750 <span aria-label="рублей">руб.</span>
+            </th>
+          </tr>
+        </tfoot>
+      </table>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <input type="hidden" name="order[]" value="product01">
         <input type="hidden" name="order[]" value="product03">
